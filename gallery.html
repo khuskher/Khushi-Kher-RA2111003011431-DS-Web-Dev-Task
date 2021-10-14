@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery</title>
+        <style>
+            .topnav {
+                background-color: black;
+                color: black;
+            }
+            .topnav a {
+                color: black;
+                text-decoration: none;
+                font-size: 25px;
+                padding: 20px 20px;
+                display: block;
+                float: left;
+            }
+            .topnav a:hover {
+                background-color: white;
+                color: black
+            }
+            body{
+                background: rgba(214, 106, 247, 0.1);
+            }
+            h1{
+                font-family: 'Times New Roman', Times, serif;
+                color: rgb(0, 0, 0);
+                font-size: 45px;
+                margin: 2px;
+                text-align: center;
+            }
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 4px;
+            }
+
+            .column {
+                flex: 25%;
+                max-width: 25%;
+                padding: 0.5% 0.5%;
+                margin-left: 1.5cm;
+                align-content: center;
+            }
+
+            .column img {
+                margin-top: 8px;
+                vertical-align: middle;
+                width: 100%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="task.html">Home</a>
+        </div>
+        <h1>GALLERY</h1>
+        <div class="row">
+            <div class="column">
+              <img src="1.jpg">
+              <img src="2.jpg">
+              <img src="3.jpg">
+              <img src="4.jpg">
+              <img src="5.jpg">
+              <img src="6.jpg">
+            </div>
+            <div class="column">
+              <img src="8.jpg">
+              <img src="9.jpg">
+              <img src="10.jpg">
+              <img src="1.jpg">
+              <img src="2.jpg">
+              <img src="3.jpg">
+            </div>
+            <div class="column">
+              <img src="4.jpg">
+              <img src="5.jpg">
+              <img src="6.jpg">
+              <img src="7.jpg">
+              <img src="8.jpg">
+              <img src="9.jpg">
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PORTFOLIO </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .topnav {
+            background-color: black;
+            color: black;
+        }
+
+        .topnav a {
+            color: black;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 20px 20px;
+            display: block;
+            float: left;
+        }
+
+        .topnav a:hover {
+            background-color: white;
+            color: black
+        }
+
+        .header {
+            background: linear-gradient(rgba(214, 106, 247, 0.2), rgb(255, 255, 255, 0.5)),
+                url(https://images.unsplash.com/photo-1556557753-4d7eb13e06c4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWluaW1hbGlzdCUyMGZsb3dlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80);
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-size: 50px;
+            height: 100vh;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            padding: 20%;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        #about {
+            padding: 10%;
+        }
+
+        #about h1 {
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(110, 40, 201);
+            font-size: 45px;
+            margin: 2px;
+        }
+
+        #about p {
+            font-size: 25px;
+            margin: 2px;
+        }
+
+        #about img {
+            width: 65%;
+            height: 450px;
+            margin: 2px;
+        }
+
+        #skills {
+            padding: 10%;
+        }
+
+        #skills h3 {
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(110, 40, 201);
+            font-size: 45px;
+            margin: 2px;
+        }
+
+        #skills h4 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            margin: 2px;
+        }
+
+        #skills p {
+            font-size: 25px;
+            margin: 2px;
+        }
+
+        #skills img {
+            width: 90%;
+            height: 500px;
+            margin: 2px;
+        }
+
+        #projects {
+            padding: 10%;
+        }
+
+        #projects h3 {
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(110, 40, 201);
+            font-size: 45px;
+            margin: 2px;
+        }
+
+        #projects h4 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            margin: 2px;
+        }
+
+        #projects p {
+            font-size: 25px;
+            margin: 2px;
+        }
+
+        #projects a {
+            font-size: 20px;
+            margin: 2px;
+        }
+
+        #projects img {
+            width: 90%;
+            height: 500px;
+            margin: 2px;
+        }
+
+        #video {
+            padding: 10%;
+        }
+
+        #video h3 {
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(110, 40, 201);
+            font-size: 45px;
+            margin: 2px;
+            text-align: center;
+
+        }
+
+        .container{
+            position: relative;
+            width: 100%;
+            padding-bottom: 50%;
+            height:0;
+        }
+
+        .container iframe{
+            position: absolute;
+            top:0;
+            bottom:0;
+            width: 100%;
+            height: 100%;
+        }
+        #resume {
+            padding: 10%;
+        }
+
+        #resume h3 {
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(110, 40, 201);
+            font-size: 45px;
+            margin: 2px;
+        }
+
+        #resume p {
+            font-size: 25px;
+            margin: 2px;
+        }
+
+        #resume a {
+            font-size: 20px;
+            margin: 2px;
+        }
+
+        #resume img {
+            width: 90%;
+            height: 500px;
+            margin: 2px;
+        }
+
+
+        #contact {
+            padding: 10%;
+        }
+
+        #contact h2 {
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(110, 40, 201);
+            font-size: 45px;
+            margin: 2px;
+        }
+
+        #contact h4 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            margin: 2px;
+        }
+
+        #contact p {
+            font-size: 25px;
+            margin: 2px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="submit"] {
+            width: 100%;
+            height: 25px;
+            font-size: 20px;
+            margin: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="task.html">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#video">Video</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact Me</a>
+    </div>
+
+    <div class="header">
+        <h1>PORTFOLIO</h1>
+    </div>
+
+    <div id="about">
+        <div class="row">
+            <div class="column">
+                <img src="i.jpg" alt="image1" </div>
+            </div>
+            <div class="column">
+                <h1>About Me</h1>
+                <p> Hi there! My name is Khushi. I am first year student perusing B.Tech in Computer Science and
+                    Engineering at SRM IST, KTR Campus, Chennai. I am interested in Web Development and what to enhance
+                    my skills in near future. Even though I am new to Web Development programming, I am quite
+                    familiarized with python programming language. I believe that computer can become the solution to
+                    all our problems if implemented correctly. I, not only want to develop upon my technical skills, but
+                    all want to develop interpersonal skills which help me lead my life.
+                </p>
+            </div>
+
+        </div>
+
+        <div id="skills">
+            <div class="row">
+                <div class="column">
+                    <h3>Skills</h3>
+
+                    <h4>Fast Learner</h4>
+                    <p>Can easily grasp new information.</p>
+
+                    <h4>Leadership Experience</h4>
+                    <p>Able to effectively lead a group or team successfully towards their goal.</p>
+
+                    <h4>Problem Solving</h4>
+                    <p>Able to reach a suitable solution by paying attention to details.</p>
+
+                    <h4>Adaptable</h4>
+                    <p>Able to work individually as well as in a team.</p>
+
+                    <h4>Communication Skills</h4>
+                    <p>Can effectively communicate my ideas and opinions.</p>
+                </div>
+
+                <div class="column">
+                    <img src="https://static.vecteezy.com/system/resources/previews/002/779/558/non_2x/online-learning-concept-teacher-at-chalkboard-video-lesson-distance-study-at-school-illustration-flat-style-vector.jpg"
+                        alt="image2">
+                </div>
+            </div>
+        </div>
+
+        <div id="projects">
+            <div class="row">
+                <div class="column">
+                    <h3>Projects</h3>
+                    <h4>Project #1</h4>
+                    <p>Description of the project 1</p>
+
+                    <h4>Project #2</h4>
+                    <p>Description of the project 2</p>
+
+                    <h4>Project #3</h4>
+                    <p>Description of the project 3</p>
+
+                    <h4>Project #4</h4>
+                    <p>Description of the project 4</p>
+
+                    <h4>Project #5</h4>
+                    <p>Description of the project 5</p>
+                    <a href="projects.html">Click here to know more.</a>
+                </div>
+
+                <div class="column">
+                    <img src="https://static.vecteezy.com/system/resources/previews/002/779/588/non_2x/young-man-study-at-computer-online-learning-concept-video-lesson-distance-study-can-use-for-web-banner-infographics-hero-images-illustration-flat-style-vector.jpg"
+                        alt="image3">
+                </div>
+            </div>
+        </div>
+
+        <div id="video">
+            <h3>It's video time!</h3>
+            <div class="container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9xwazD5SyVg"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="resume">
+            <h3>Resume</h3>
+            <p>Now to the most important part of any portfolio, the RESUME. It an important piece of document which can
+                land you many astonishing opportunities. It entails information on your skills and training, work
+                experience, and education. </p>
+            <a href="Resume.pdf" download="Resume">Download the Resume</a>
+        </div>
+
+        <div id="contact">
+            <div class="row">
+                <div class="column">
+                    <h2>Contact Me</h2>
+
+                    <h4>Phone Number</h4>
+                    <p>+62 822-2410-5797</p>
+
+                    <h4>Email</h4>
+                    <p>kk6394@srmist.edu.in</p>
+
+                    <h4>Address</h4>
+                    <p>Bukit Kemuning no, 8, <br> Bukit Sari, <br> Semarang, Central Java, <br> Indonesia, 33684</p>
+                </div>
+                <div class="column">
+                    <form>
+                        <input type="text" placeholder="Name">
+                        <input type="tel" placeholder="Mobile Number">
+                        <input type="email" placeholder="Email Address">
+                        <input type="text" placeholder="What is your query?">
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
